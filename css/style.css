@@ -187,7 +187,7 @@ body {
     grid-template-rows: repeat(2, 1fr);
   }
 }
-@media screen and(max-width: 768px) {
+@media screen and (max-width: 768px) {
   .info {
     position: relative;
   }
@@ -204,6 +204,7 @@ body {
 .project-h3 {
   color: var(--dark-color);
   margin-bottom: 20px;
+  padding-top: 20px;
 }
 
 .project-p {
@@ -249,5 +250,93 @@ body {
   }
   .about__flex-item:last-child {
     margin-bottom: 0;
+  }
+}
+
+.request {
+  background-color: var(--accent-color);
+  padding-top: 30px;
+  padding-bottom: 45px;
+}
+.request_flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.request_flex-left {
+  color: var(--white-color);
+}
+.request_h4 {
+  text-transform: uppercase;
+  font-family: Oswald;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.96px;
+  margin-bottom: 7px;
+}
+.request_h5 {
+  text-transform: uppercase;
+  font-family: Oswald;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.48px;
+}
+.request_flex-right {
+  display: flex;
+  justify-content: space-between;
+}
+.request_btn {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  background-color: var(--white-color);
+  border: none;
+  width: 175px;
+  height: 49px;
+  cursor: pointer;
+  font-family: Oswald;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  padding: 14px 30px;
+  width: 175px;
+  height: 49px;
+}
+
+.request__icon {
+  margin-right: 15px;
+}
+
+@media screen and (max-width: 1280px) {
+  .request {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .request_flex {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .header_title {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header_title {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
