@@ -69,7 +69,7 @@ body {
   font-size: 14px;
   line-height: 21px;
 }
-
+/**************************************************************** Секция:Шапка***********************************************/
 .header {
   min-height: 740px;
   background-image: url(../img/Rectangle.jpg);
@@ -130,7 +130,7 @@ body {
   margin: 0 auto;
   color: var(--white-color);
 }
-
+/**************************************************************** Секция:Наши проекты, Сколько мы на рынке****************************/
 .about {
   padding-top: 250px;
   min-height: 1080px;
@@ -142,7 +142,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   max-width: 1110px;
-  max-height: 300px;
+  min-height: 300px;
   width: 100%;
   background-color: #f7f7f7;
   padding: 57px 130px;
@@ -252,7 +252,7 @@ body {
     margin-bottom: 0;
   }
 }
-
+/**************************************************************** Секция:Оставьте запрос**************************************************/
 .request {
   background-color: var(--accent-color);
   padding-top: 29px;
@@ -340,8 +340,7 @@ body {
     padding-right: 15px;
   }
 }
-/* services */
-
+/**************************************************************** Секция:Чем мы занимаемся**************************************************/
 .services {
   padding: 150px 0;
 }
@@ -394,8 +393,7 @@ body {
     grid-template-columns: repeat(1, 1fr);
   }
 }
-
-/* portfolio */
+/**************************************************************** Секция:Наше Портфолио**************************************************/
 .portfolio {
   cursor: pointer;
 }
@@ -430,9 +428,7 @@ body {
     width: 100%;
   }
 }
-
-/* question */
-
+/**************************************************************** Секция:Ответы на вопросы**************************************************/
 .question {
   padding-top: 150px;
   padding-bottom: 110px;
@@ -489,5 +485,164 @@ body {
 @media screen and (max-width: 1280px) {
   .question {
     padding: 150px 15px 110px;
+  }
+}
+/**************************************************************** Секция:Наши партнеры*************************************************/
+.parners {
+  padding-top: 100px;
+  padding-bottom: 80px;
+  background-color: var(--dark-color);
+}
+.partners__h2 {
+  color: var(--white-color);
+  text-align: center;
+  margin-bottom: 65px;
+}
+.partners__flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.parners__item {
+  margin-right: 40px;
+  margin-bottom: 20px;
+  max-width: 170px;
+}
+
+.parners__item:nth-child(5n) {
+  margin-right: 0;
+}
+@media screen and (max-width: 1280px) {
+  .partners__flex {
+    justify-content: center;
+  }
+  .parners__item {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .parners__item:nth-child(5n) {
+    margin-right: 40px;
+    margin-left: 10px;
+  }
+}
+/**************************************************************** Секция:Отзывы о работе с нами**************************************************/
+.reviews {
+  padding: 150px 0 142px;
+}
+
+.reviews__h2 {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.reviews__grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.reviews__grid-item {
+}
+.reviews__card {
+  background-color: #f7f7f7ff;
+  padding: 28px 30px;
+  margin-bottom: 30px;
+}
+.reviews__quotes {
+  color: var(--accent-color);
+  font-size: 96px;
+  line-height: 1;
+  margin-bottom: -40px;
+}
+.reviews__author-accent {
+  color: var(--accent-color);
+}
+
+@media screen and (max-width: 1280px) {
+  .reviews {
+    padding: 100px 15px;
+  }
+  .reviews__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 768px) {
+  .reviews__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+/*****************************************************************Секция:Контакты**************************************************************/
+.contacts {
+  padding: 100px 0 150px;
+}
+
+.contacts__h2 {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.contacts__grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+}
+.contacts__items {
+  min-width: 280px;
+  text-align: center;
+}
+.contacts__icon {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 13px;
+}
+
+.contacts__h3 {
+  text-transform: uppercase;
+}
+.contacts__h3-gray {
+  color: var(--gray-color);
+  margin-bottom: 18px;
+}
+.contacts__h3-accent {
+  color: var(--accent-color);
+}
+@media screen and (max-width: 1280px) {
+  .contacts__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contacts__items {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contacts__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .contacts__items {
+    max-width: 100%;
+  }
+}
+/**************************************************************** Секция:Footer**************************************************************/
+
+.footer {
+  padding: 30px 0;
+  background-color: var(--dark-color);
+  color: var(--white-color);
+}
+.footer__flex {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__copyright {
+}
+.footer__brand {
+}
+
+@media screen and (max-width: 1280px) {
+  .footer {
+    padding: 30px 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer__flex {
+    flex-direction: column;
+    align-items: center;
   }
 }
