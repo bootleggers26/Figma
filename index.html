@@ -225,10 +225,10 @@
       <div class="container">
         <h2 class="text-h2 section__h2">Ответы на вопросы</h2>
         <div class="question-items">
-          <div class="question-item">
-            <h3 class="text-h3 question_h3 close">
+          <details class="question-item">
+            <summary class="text-h3 question_h3">
               Работаетет ли вы по 249 ФЗ?
-            </h3>
+            </summary>
             <p class="text-p question_p">
               Lorem Ipsum - это текст-"рыба", часто используемый в печати и
               вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
@@ -236,11 +236,11 @@
               печатник создал большую коллекцию размеров и форм шрифтов,
               используя Lorem Ipsum для распечатки образцов.
             </p>
-          </div>
-          <div class="question-item">
-            <h3 class="text-h3 question_h3 open">
+          </details>
+          <details class="question-item">
+            <summary class="text-h3 question_h3">
               Работаетет ли вы по 249 ФЗ?
-            </h3>
+            </summary>
             <p class="text-p question_p">
               Lorem Ipsum - это текст-"рыба", часто используемый в печати и
               вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
@@ -248,11 +248,11 @@
               печатник создал большую коллекцию размеров и форм шрифтов,
               используя Lorem Ipsum для распечатки образцов.
             </p>
-          </div>
-          <div class="question-item">
-            <h3 class="text-h3 question_h3 close">
+          </details>
+          <details class="question-item">
+            <summary class="text-h3 question_h3">
               Работаетет ли вы по 249 ФЗ?
-            </h3>
+            </summary>
             <p class="text-p question_p">
               Lorem Ipsum - это текст-"рыба", часто используемый в печати и
               вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
@@ -260,11 +260,11 @@
               печатник создал большую коллекцию размеров и форм шрифтов,
               используя Lorem Ipsum для распечатки образцов.
             </p>
-          </div>
-          <div class="question-item">
-            <h3 class="text-h3 question_h3 close">
+          </details>
+          <details class="question-item">
+            <summary class="text-h3 question_h3">
               Работаетет ли вы по 249 ФЗ?
-            </h3>
+            </summary>
             <p class="text-p question_p">
               Lorem Ipsum - это текст-"рыба", часто используемый в печати и
               вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
@@ -272,7 +272,7 @@
               печатник создал большую коллекцию размеров и форм шрифтов,
               используя Lorem Ipsum для распечатки образцов.
             </p>
-          </div>
+          </details>
         </div>
       </div>
     </section>
@@ -381,14 +381,21 @@
             <img class="contacts__icon" src="img/adress.svg" alt="adress" />
             <h3 class="text-h3 contacts__h3 contacts__h3-gray">Адрес:</h3>
             <h3 class="text-h3 contacts__h3">
-              Невский проспект 140,<br />Офис 140-142
+              <a
+                href="https://maps.app.goo.gl/9P57AdpJznyptuCw9"
+                target="_blank"
+                >Невский проспект 140,<br />Офис 140-142</a
+              >
             </h3>
           </div>
           <div class="contacts__items">
             <img class="contacts__icon" src="img/phone.svg" alt="phone" />
             <h3 class="text-h3 contacts__h3 contacts__h3-gray">Телефон:</h3>
             <h3 class="text-h3 contacts__h3">
-              8 (812) 111-22-33 ,<br />8 (812) 111-22-33
+              <a href="tel:+78121112233"
+                >8 (812) 111-22-33 8 <br />
+                8 (812) 111-22-33 8</a
+              >
             </h3>
           </div>
           <div class="contacts__items">
@@ -401,7 +408,9 @@
           <div class="contacts__items">
             <img class="contacts__icon" src="img/mail.svg" alt="mail" />
             <h3 class="text-h3 contacts__h3 contacts__h3-gray">E-mail:</h3>
-            <h3 class="text-h3 contacts__h3-accent">info@vip.ru</h3>
+            <h3 class="text-h3 contacts__h3-accent">
+              <a href="mailto:info@vip.ru">info@vip.ru</a>
+            </h3>
           </div>
         </div>
       </div>
